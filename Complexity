@@ -1,0 +1,13 @@
+There are two types of Complexities. They are:
+1. Time Complexity
+2. Space Complexity
+
+1. Time complexity: The time taken by our code to execute fully and deriving the output.
+Three basic notations for showing time Complexity are:
+  a. BigO: It can be noted by 'O'. It can also be called as Worst-case complexity.
+  b. Theta: It can be noted by 'θ'. It can also be called as Average-case complexity.
+  c. Omega: It can be noted by 'Ω'. It can also be called as Best-case complexity.
+  
+2. Space Complexity: It is the amount of space taken by our code to run as a function of the length of the input. 
+
+So, this is all about complexities in DSA.
