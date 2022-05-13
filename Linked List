@@ -1,1 +1,41 @@
+'''Linked List:
+A linked list is a sequence of data elements, which are connected together via links.
+Each data element contains a connection to another data element in form of a pointer.''' 
+
+#Simple Code for Creating a linked list:
+class Node:
+  def __init__(self, data):                                  #Node creation code
+    self.data = data
+    self.next = None
+  
+class LinkedList:
+  def __init__(self, data):
+    new_node = Node(data)                                    #create new node using Node Class
+    self.head = new_node                                     #initialize head of linked list
+    self.tail = new_node                                     #initialize tail of linked list
+    self.length = 1                                          #initialize length of linked list
+
+  
+  def print_list(self):                                      #function for printing a linked list
+    temp = self.head
+    while temp is not None:
+      print(temp.data)
+      temp = temp.next
+
+                                                             
+  def append(self, data):                                     #function for appending a linked list
+    new_node = Node(data)
+    if self.length == 0:                                      #check if linked list is empty
+      self.head = new_node
+      self.tail = new_node
+    else:                                                     #if not, update tail value and pointer
+      self.tail.next = new_Node
+      self.tail = new_node
+    self.length +=1
+
+my_linked_list = LinkedList(10)
+
+my_linked_list.append(4)
+
+my_linked_list.print_list()
 
