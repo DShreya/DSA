@@ -51,24 +51,25 @@ class LinkedList:
     self.length +=1                                           #increase the length of linked list by one on appending one node to it
 
 
-  def delete(self, data):
+  def delete(self, data):                                     #removing a node from linked list
     headval = self.head
-    if headval is not None:
-      if headval,data = data:
-        self.head = headval.next
-        headval = None
+    if headval is not None:                                   #check if head is None or not
+      if headval.data = data:                                 #check if headval is equal to the data to be removed                                 
+        self.head = headval.next                              #set link of headval Node to link of prev Node
+        headval = None                                        #set headval link equal to None, hence removing the Node
         
     while (headval is not None):
          if headval.data == data:
             break
-         prev = headval
-         headval = headval.next
+         prev = headval                                       #Node traversing
+         headval = headval.next                               #Node traversing
 
       if (headval == None):
          return
 
-      prev.next = headval.next
-         headval = None
+      prev.next = headval.next                                #set link of headval Node to link of prev Node
+      headval = None                                          #set headval link equal to None, hence removing the Node
+        
 
 my_linked_list = LinkedList(10)
 
@@ -81,4 +82,3 @@ my_linked_list.insert(my_linked_list.head.next, 2)
 my_linked_list.delete(4)
 
 my_linked_list.print_list()
-
