@@ -1,0 +1,16 @@
+#HashTable
+
+A HASH TABLE is a data structure that stores values using a pair of keys and values. 
+Each value is assigned a unique key that is generated using a hash function.
+
+The name of the key is used to access its associated value. 
+This makes searching for values in a hash table very fast, irrespective of the number of items in the hash table.
+
+Hash table operations
+Here, are the Operations supported by Hash tables:
+Insertion – this Operation is used to add an element to the hash table
+Searching – this Operation is used to search for elements in the hash table using the key
+Deleting – this Operation is used to delete elements from the hash table
+
+
+
