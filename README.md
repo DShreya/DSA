@@ -6,3 +6,4 @@ Content:
 1. Conplexities
 2. Array
 3. Linked list
+4. Hash Table
